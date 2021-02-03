@@ -53,6 +53,19 @@ y = "Hello"
 print(x == y)
 print(x is y) #  string literals are pooled, strings are immutable :)
 
-print(3 is 3)
+# print(3 is 3)  # works but warning
 print("Done")
 
+x = 3 + 1j
+
+print(x, type(x))
+print(1j, (1j ** 2))
+
+yes = True
+no = False
+print(yes and no)
+print(yes or no)
+
+#  bitwise operations!!! (work on bool, but not really the rigth thing!)
+print(yes & no)
+print(yes | no)
