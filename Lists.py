@@ -23,5 +23,12 @@ r = range(1, 10, 2)
 print(r)
 print(list(r))
 
+funct = lambda s: len(s)
+print(funct, type(funct))
 
+print(funct("Hello there"))
 #   pythonic -- good, expected, python style
+
+lengths = list(map(lambda x: len(x), names))
+print(lengths)
+print(names)

@@ -30,5 +30,8 @@ print("if is finished...")
 y = "Hello" if x > 0.5 else "goodbye"
 print(y)
 
+#  not very pythonic ;) 
+if x > 0.5: print("it's big"); print("yeah, I mean it")
+
 #  python does NOT have switch/case...
 #  fudges exist, often using dict
