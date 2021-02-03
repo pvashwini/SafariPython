@@ -21,7 +21,9 @@ def dayOfWeek(day, month, year):
     m, y = (month, year) if month > 2 else (month + 12, year - 1)
     ##  oops, function isn't working, not going to bother to fix
     ## check out "Zeller's congruence"
-    return (day + (13 * (m + 1) // y) + y + y // 4 - y // 100 + y // 400) % 7
+    return (day + (13 * (m + 1) // 5) + y + y // 4 - y // 100 + y // 400) % 7
+    # my mistake was dividing by "y"... should be divided by 5. Finger trouble :(
+    # return (day + (13 * (m + 1) // y) + y + y // 4 - y // 100 + y // 400) % 7
 
 def showCount(c = 100):
     print(f"count is {c}")
